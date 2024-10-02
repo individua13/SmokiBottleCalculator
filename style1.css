@@ -1,0 +1,245 @@
+  /*all div css*/
+  html, body {
+    height: 100%;
+    background: #ddd;
+  }
+.row{
+    padding-top: 1%;
+    width: 100%;
+    justify-content: center
+  
+  
+  }
+  
+  input[type=number]{
+    text-align: center;
+    min-width: 50px;
+  
+  
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  @media only screen and (max-width: 1200px) {
+  
+    div > .left-div{
+      display: block;
+      width: 550px;
+    }
+    div > .numberBox{
+      width: 150px;
+    }
+    div > .rigth-div{
+      width: 550px;
+    }
+    div > .liquidBox{
+    width: 80px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    div > .left-div{
+      display: block;
+      width: 400px;
+    }
+    div > .numberBox{
+      width: 70%;
+    }
+    div > .rigth-div{
+      width: 450px;
+    }
+    div > .liquidBox{
+    width: 70px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    div > .left-div{
+      display: block;
+      width: 350px;
+    }
+    div > .numberBox{
+      width: 100px;
+    }
+    ul > .left-list{
+    padding: 10px 10px;
+    margin-bottom: 0px;
+  }
+  }
+  @media only screen and (max-width: 800px) {
+    div > .left-div{
+      display: block;
+      width: 600px;
+    }
+    div > .numberBox{
+      width: 200px;
+    }
+    ul > .left-list{
+    padding: 10px 10px;
+    margin-bottom: 0px;
+    }
+    div > .rigth-div{
+      width: 600px;
+    }
+    div > .liquidBox{
+    width: 70px;
+    }
+    ul > .right-list{
+    padding: 10px 10px;
+    margin-bottom: 0px;
+    }
+    ul > .right-list-header{
+    padding: 5px 5px;
+    margin-bottom: 0px;
+    }
+  }
+  
+ 
+  
+  /*left div css*/
+  .left-div{
+    width: 600px;
+    text-align: center;
+  }
+  .left-list{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .button1,.button2 {
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    color: #ffffff;
+  }
+  .button1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+  }
+  .button2 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+  }
+  .button1:hover,.button2:hover{
+    background-color: #317233;
+  
+  }
+  .numberBox{
+    margin: -4px;
+    margin-bottom: 1px;
+    width: 200px;
+    background-color: transparent;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    border-left: transparent;
+    border-right: transparent;
+    height: 40px;
+
+  }
+ /*right div css*/
+  .rigth-div{
+    width: 400px;
+    padding-right: 1%;
+  }
+  .right-list-header{
+    list-style-type: none;
+    background-color: #4CAF50;
+    color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .right-list-header-green{
+    padding-left: 30%;
+  }
+
+
+  .right-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .right-list:before,  .right-list:after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+
+  
+
+  
+  .right-list{
+    pointer-events: none;
+    color: #ffffff;
+    background: #ddd;
+  
+    border-radius: 3px;
+    padding: 0px;
+    display: flex ;
+    justify-content: start;
+    margin-bottom: 25px;
+    font: 14px/1 'Open Sans', sans-serif;
+  }
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .name{
+  width: 10%;
+  }
+  .name2{
+  width: 10%;
+  }
+  .name1{
+  margin-right: 0%;
+  }
+  .liquidBox{
+    width: 100px;
+  }
+  
+
+  .transparent-input {
+    border: none; /* Убираем границы */
+    background-color: transparent; /* Прозрачный фон */
+    outline: none; /* Убираем обводку при фокусе */
+    font-size: inherit; /* Используем размер шрифта по умолчанию */
+    color: inherit; /* Используем цвет текста по умолчанию */
+    width: 100%;
+ 
+}
+
+.circle{
+    
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: radial-gradient(circle at 65% 15%, aqua, darkblue);  
+}
+.label-input-wrapper {
+  display: flex ;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  content: "мл"; /* Устанавливаем текст "ml" после элемента input */
+    margin-left: 5px; /* Добавляем небольшой отступ между input и текстом "ml" */
+
+
+  position: absolute;
+  top: 50%; /* Расположение по вертикали в середине родительского элемента */
+  left: 50%; /* Расположение по горизонтали в середине родительского элемента */
+  transform: translate(-50%, -50%); /* Перенос элемента назад на половину его ширины и высоты */
+  text-align: center; /* Выравнивание текста по центру */
+}
